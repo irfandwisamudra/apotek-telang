@@ -22,17 +22,17 @@ class TransactionFactory extends Factory
      */
     public function definition()
     {
-        return [
-            'tanggal' => $this->faker->dateTime(),
-            'user_id' => function () {
-                return User::factory()->create()->id;
-            },
-            'nama_customer' => $this->faker->name,
-            'kode_obat' => function () {
-                return Drug::factory()->create()->kode;
-            },
-            'qty' => $this->faker->randomNumber(1),
-            'total' => $this->faker->randomNumber(5, true),
-        ];
+        // return [
+        //     'tanggal' => $this->faker->dateTime(),
+        //     'user_id' => function () {
+        //         return User::factory()->create()->id;
+        //     },
+        //     'nama_customer' => $this->faker->name,
+        //     'kode_obat' => function () {
+        //         return Drug::factory()->create()->kode;
+        //     },
+        //     'qty' => $this->faker->randomNumber(1),
+        //     'total' => $this->faker->randomNumber(5, true),
+        // ];
     }
 }

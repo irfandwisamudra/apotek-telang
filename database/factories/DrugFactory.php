@@ -22,16 +22,16 @@ class DrugFactory extends Factory
    */
   public function definition()
   {
-    return [
-      'icon' => $this->faker->imageUrl(),
-      'kode' => $this->faker->unique()->word,
-      'supplier_id' => function () {
-        return Supplier::factory()->create()->id;
-      },
-      'nama_obat' => $this->faker->word,
-      'supplier' => $this->faker->company,
-      'stok' => $this->faker->randomNumber(2),
-      'harga' => $this->faker->randomNumber(5, true),
-    ];
+    // return [
+    //   'icon' => $this->faker->imageUrl(),
+    //   'kode' => $this->faker->unique()->word,
+    //   'supplier_id' => function () {
+    //     return Supplier::factory()->create()->id;
+    //   },
+    //   'nama_obat' => $this->faker->word,
+    //   'produser' => $this->faker->company,
+    //   'stok' => $this->faker->randomNumber(2),
+    //   'harga' => $this->faker->randomNumber(5, true),
+    // ];
   }
 }

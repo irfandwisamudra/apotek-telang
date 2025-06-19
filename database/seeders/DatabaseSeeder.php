@@ -23,10 +23,10 @@ class DatabaseSeeder extends Seeder
             'password' => md5('admin')
         ]);
 
-        Supplier::factory(5)->create();
+        // Supplier::factory(5)->create();
 
-        Drug::factory(10)->create();
+        // Drug::factory(10)->create();
 
-        Transaction::factory(20)->create();
+        // Transaction::factory(20)->create();
     }
 }

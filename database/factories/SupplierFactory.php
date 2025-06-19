@@ -21,11 +21,11 @@ class SupplierFactory extends Factory
      */
     public function definition()
     {
-        return [
-            'nama_supplier' => $this->faker->name,
-            'alamat' => $this->faker->streetAddress,
-            'kota' => $this->faker->city,
-            'no_telp' => $this->faker->randomNumber(5, true)
-        ];
+        // return [
+        //     'nama_supplier' => $this->faker->name,
+        //     'alamat' => $this->faker->streetAddress,
+        //     'kota' => $this->faker->city,
+        //     'no_telp' => $this->faker->randomNumber(5, true)
+        // ];
     }
 }

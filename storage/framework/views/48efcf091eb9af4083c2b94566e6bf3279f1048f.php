@@ -13,7 +13,7 @@
 					<div class="col-lg-6">
 						<div class="p-5">
 							<div class="text-center">
-								<h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+								<h1 class="h4 text-gray-900 mb-4">Login</h1>
 							</div>
 							<?php if(session('success')): ?>
 							<div class="alert alert-success">
@@ -29,7 +29,7 @@
 							<form class="user" action="/logged" method="post">
 								<?php echo csrf_field(); ?>
 								<div class="form-group">
-									<input type="text" name="username" class="form-control form-control-user" placeholder="Enter Username">
+									<input type="text" name="username" class="form-control form-control-user" placeholder="Masukkan Username">
 									<?php $__errorArgs = ['username'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -40,7 +40,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
 								</div>
 								<div class="form-group">
-									<input type="password" name="password1" class="form-control form-control-user" placeholder="Enter Password">
+									<input type="password" name="password1" class="form-control form-control-user" placeholder="Masukkan Password">
 									<?php $__errorArgs = ['password1'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -56,7 +56,7 @@ unset($__errorArgs, $__bag); ?>
 							</form>
 							<hr>
 							<div class="text-center">
-								<a class="small" href="/register">Create an Account!</a>
+								<span class="small">Belum punya akun? <a href="/register">Register sekarang!</a></span>
 							</div>
 						</div>
 					</div>

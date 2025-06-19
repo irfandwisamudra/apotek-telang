@@ -9,7 +9,7 @@ class Drug extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['icon', 'kode', 'supplier_id', 'nama_obat', 'supplier', 'stok', 'harga'];
+    protected $fillable = ['icon', 'kode', 'supplier_id', 'nama_obat', 'produser', 'stok', 'harga'];
 
     public function supplier()
     {

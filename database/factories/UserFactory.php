@@ -10,10 +10,10 @@ class UserFactory extends Factory
 
   public function definition()
   {
-    return [
-      'username' => $this->faker->userName,
-      'email' => $this->faker->unique()->safeEmail,
-      'password' => md5('password'),
-    ];
+    // return [
+    //   'username' => $this->faker->userName,
+    //   'email' => $this->faker->unique()->safeEmail,
+    //   'password' => md5('password'),
+    // ];
   }
 }

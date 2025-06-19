@@ -9,7 +9,7 @@
 			<div class="col-lg-7">
 				<div class="p-5">
 					<div class="text-center">
-						<h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+						<h1 class="h4 text-gray-900 mb-4">Register</h1>
 					</div>
 					<form class="user" action="/registered" method="post">
 						@csrf
@@ -18,7 +18,7 @@
 							@error('username') <small class="text-danger"> {{ $message }} </small> @enderror
 						</div>
 						<div class="form-group">
-							<input type="text" name="email" class="form-control form-control-user" value="{{ old('email') }}" placeholder="Email Address">
+							<input type="text" name="email" class="form-control form-control-user" value="{{ old('email') }}" placeholder="Alamat Email">
 							@error('email') <small class="text-danger"> {{ $message }} </small> @enderror
 						</div>
 						<div class="form-group row">
@@ -27,17 +27,17 @@
 								@error('password1') <small class="text-danger"> {{ $message }} </small> @enderror
 							</div>
 							<div class="col-sm-6">
-								<input type="password" name="password2" class="form-control form-control-user" placeholder="Repeat Password">
+								<input type="password" name="password2" class="form-control form-control-user" placeholder="Ulangi Password">
 								@error('password2') <small class="text-danger"> {{ $message }} </small> @enderror
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary btn-user btn-block">
-							Register Account
+							Daftar Akun
 						</button>
 					</form>
 					<hr>
 					<div class="text-center">
-						<a class="small" href="/login">Already have an account? Login!</a>
+						<span class="small">Sudah punya akun? <a href="/login">Login!</a></span>
 					</div>
 				</div>
 			</div>

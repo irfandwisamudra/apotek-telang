@@ -71,8 +71,8 @@
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Data Obat</a>
-                        <a class="collapse-item" href="#">Tambah Obat</a>
+                        <a class="collapse-item" href="/drug">Data Obat</a>
+                        <a class="collapse-item" href="/drug/add">Tambah Obat</a>
                     </div>
                 </div>
             </li>
@@ -82,12 +82,12 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                 aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-truck"></i>
-                <span>Suppliers</span>
+                <span>Supplier</span>
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="#">Data Supplier</a>
-                    <a class="collapse-item" href="#">Tambah Supplier</a>
+                    <a class="collapse-item" href="/supplier">Data Supplier</a>
+                    <a class="collapse-item" href="/supplier/add">Tambah Supplier</a>
                 </div>
             </div>
         </li>
@@ -101,8 +101,8 @@
             </a>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="#">Data Transaksi</a>
-                    <a class="collapse-item" href="#">Tambah Transaksi</a>
+                    <a class="collapse-item" href="/transaction">Data Transaksi</a>
+                    <a class="collapse-item" href="/transaction/add">Tambah Transaksi</a>
                 </div>
             </div>
         </li>
@@ -142,7 +142,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo e(session('username')); ?></span>
                         <img class="img-profile rounded-circle"
-                        src="assets/img/undraw_profile.svg">
+                        src="<?php echo e(asset('assets/img/undraw_profile.svg')); ?>">
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -206,7 +206,7 @@ aria-hidden="true">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Yakin Ingin Keluar?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Yakin untuk Logout?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
             </button>

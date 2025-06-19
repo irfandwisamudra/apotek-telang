@@ -12,12 +12,11 @@
 2. Jika belum terinstall, lakukan instalasi terlebih dahulu
 
 ## Cara menjalankan
-1. Jalankan XAMPP, lalu nyalakan Apache dan MySQL
-2. Buka PHPMyAdmin, lalu buat databasenya
-3. Import file ```apotek_telang.sql``` yang ada di folder ```DB``` ke database yang sudah dibuat
-4. Rename ```example.env``` menjadi ```.env```
-5. Setting database pada ```.env```, sesuaikan dengan database yang sudah dibuat sebelumnya
-6. Jalankan ```php artisan key:generate``` pada Terminal / GitBash yang terletak di lokasi folder ini
+1. Jalankan ```php artisan key:generate``` pada Terminal / GitBash yang terletak di lokasi folder ini
+2. Jalankan XAMPP, lalu nyalakan Apache dan MySQL
+3. Buka PHPMyAdmin, lalu buat databasenya
+5. Import file ```apotek_telang.sql``` yang ada di folder ```DB``` ke database yang sudah dibuat
+6. Setting database pada file ```.env```, sesuaikan dengan database yang sudah dibuat sebelumnya
 7. Jalankan ```php artisan serve``` pada Terminal / GitBash
 8. Buka http://localhost:8000
 9. Masukkan username: admin - password: admin

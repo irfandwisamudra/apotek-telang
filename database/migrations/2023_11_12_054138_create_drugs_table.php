@@ -20,7 +20,7 @@ class CreateDrugsTable extends Migration
             $table->unsignedBigInteger('supplier_id');
             $table->foreign('supplier_id')->references('id')->on('suppliers');
             $table->string('nama_obat');
-            $table->string('supplier');
+            $table->string('produser');
             $table->string('stok');
             $table->string('harga');
             $table->timestamps();

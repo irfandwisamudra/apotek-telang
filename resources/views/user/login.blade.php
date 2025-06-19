@@ -14,7 +14,7 @@
 					<div class="col-lg-6">
 						<div class="p-5">
 							<div class="text-center">
-								<h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+								<h1 class="h4 text-gray-900 mb-4">Login</h1>
 							</div>
 							@if (session('success'))
 							<div class="alert alert-success">
@@ -28,11 +28,11 @@
 							<form class="user" action="/logged" method="post">
 								@csrf
 								<div class="form-group">
-									<input type="text" name="username" class="form-control form-control-user" placeholder="Enter Username">
+									<input type="text" name="username" class="form-control form-control-user" placeholder="Masukkan Username">
 									@error('username') <small class="text-danger"> {{ $message }} </small> @enderror
 								</div>
 								<div class="form-group">
-									<input type="password" name="password1" class="form-control form-control-user" placeholder="Enter Password">
+									<input type="password" name="password1" class="form-control form-control-user" placeholder="Masukkan Password">
 									@error('password1') <small class="text-danger"> {{ $message }} </small> @enderror
 								</div>
 								<button type="submit" class="btn btn-primary btn-user btn-block">
@@ -41,7 +41,7 @@
 							</form>
 							<hr>
 							<div class="text-center">
-								<a class="small" href="/register">Create an Account!</a>
+								<span class="small">Belum punya akun? <a href="/register">Register sekarang!</a></span>
 							</div>
 						</div>
 					</div>

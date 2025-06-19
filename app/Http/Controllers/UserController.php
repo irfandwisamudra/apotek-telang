@@ -30,10 +30,10 @@ class UserController extends Controller
                 ]);
                 return redirect('/home');
             } else {
-                return redirect('/login')->with('error', 'Username / Password wrong!');
+                return redirect('/login')->with('error', 'Username / Password salah!');
             }
         } else {
-            return redirect('/login')->with('error', 'Username / Password wrong!');
+            return redirect('/login')->with('error', 'Username / Password salah!');
         }
     }
 
@@ -53,7 +53,7 @@ class UserController extends Controller
         $saved = User::create($data);
 
         if ($saved) {
-            return redirect('/login')->with('success', 'New user has been registered!!');
+            return redirect('/login')->with('success', 'User baru telah terdaftar!');
         } else {
             return redirect('/register')->withInput();
         }
@@ -62,6 +62,7 @@ class UserController extends Controller
     public function logout()
     {   
         session()->forget(['id', 'username', 'email']);
-        return redirect('/login')->with('success', 'Logout successfully, Bye!');
+        return redirect('/login')->with('success', '
+        Logout berhasil, sampai jumpa!');
     }
 }
